@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Layers } from 'lucide-react';
+
 import ProjectCard from './ProjectCard';
 
 const projects = [
@@ -80,7 +80,7 @@ const projects = [
       'Deployed on Vercel + Render',
     ],
     github: 'https://github.com/abhisheksinghcodebase',
-    demo: 'https://phulhardham.vercel.app',
+    demo: 'https://phulhar-dham.vercel.app',
     color1: '#a78bfa',
     color2: '#7c3aed',
     featured: false,
@@ -137,7 +137,7 @@ export default function Projects() {
           viewport={{ once: true }}
         >
           <div className="section-tag mx-auto mb-4 w-fit">
-            <Layers size={12} /> Featured Projects
+            <i className="fa-solid fa-layer-group text-[12px]"></i> Featured Projects
           </div>
           <h2
             className="font-display font-black mb-4"

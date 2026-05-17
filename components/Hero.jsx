@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Bot, Mail, Phone } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -55,10 +54,10 @@ export default function Hero() {
               custom={0}
             >
               <span className="badge-pill badge-pill-indigo">
-                <Zap size={11} /> Full-Stack Developer
+                <i className="fa-solid fa-bolt text-[11px]"></i> Full-Stack Developer
               </span>
               <span className="badge-pill badge-pill-cyan">
-                <Bot size={11} /> AI Enthusiast
+                <i className="fa-solid fa-robot text-[11px]"></i> AI Enthusiast
               </span>
             </motion.div>
 
@@ -102,7 +101,7 @@ export default function Hero() {
               custom={3}
             >
               <a href="#projects" className="btn-primary">
-                <ArrowRight size={16} /> Explore Projects
+                <i className="fa-solid fa-arrow-right text-[16px]"></i> Explore Projects
               </a>
               <a
                 href="https://github.com/abhisheksinghcodebase"
@@ -110,7 +109,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="btn-outline"
               >
-                <FaGithub size={16} /> View GitHub
+                <i className="fa-brands fa-github text-[16px]"></i> View GitHub
               </a>
             </motion.div>
 
@@ -143,7 +142,7 @@ export default function Hero() {
                 className="flex items-center gap-2 text-xs"
                 style={{ color: 'var(--text-muted)' }}
               >
-                <Mail size={13} style={{ color: '#6366f1' }} />
+                <i className="fa-solid fa-envelope text-[13px]" style={{ color: '#6366f1' }}></i>
                 abhisheksinghcode@zohomail.in
               </a>
               <a
@@ -151,7 +150,7 @@ export default function Hero() {
                 className="flex items-center gap-2 text-xs"
                 style={{ color: 'var(--text-muted)' }}
               >
-                <Phone size={13} style={{ color: '#06b6d4' }} />
+                <i className="fa-solid fa-phone text-[13px]" style={{ color: '#06b6d4' }}></i>
                 +91 8603937938
               </a>
             </motion.div>
@@ -159,7 +158,7 @@ export default function Hero() {
 
           {/* RIGHT: Mock Preview Card */}
           <motion.div
-            className="relative hidden lg:block"
+            className="relative mt-8 lg:mt-0"
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
@@ -185,7 +184,7 @@ export default function Hero() {
                   </div>
                   <div className="flex items-center gap-2 ml-1">
                     <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center">
-                      <Bot size={12} className="text-white" />
+                      <i className="fa-solid fa-robot text-white text-[12px]"></i>
                     </div>
                     <span className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>
                       Abhishek&apos;s Portfolio

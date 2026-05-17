@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { ExternalLink, Star } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
+
 
 export default function ProjectCard({ project, index }) {
   return (
@@ -39,7 +38,7 @@ export default function ProjectCard({ project, index }) {
                 color: '#fbbf24',
               }}
             >
-              <Star size={10} fill="currentColor" /> Featured
+              <i className="fa-solid fa-star text-[10px]"></i> Featured
             </span>
           )}
         </div>
@@ -113,7 +112,7 @@ export default function ProjectCard({ project, index }) {
               color: 'var(--text-secondary)',
             }}
           >
-            <FaGithub size={15} /> GitHub
+            <i className="fa-brands fa-github text-[15px]"></i> GitHub
           </a>
           {project.demo ? (
             <a
@@ -126,7 +125,7 @@ export default function ProjectCard({ project, index }) {
                 boxShadow: `0 4px 20px ${project.color1}40`,
               }}
             >
-              <ExternalLink size={15} /> Live Demo
+              <i className="fa-solid fa-arrow-up-right-from-square text-[15px]"></i> Live Demo
             </a>
           ) : (
             <div

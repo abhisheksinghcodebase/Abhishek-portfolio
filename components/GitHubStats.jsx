@@ -1,8 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Star, GitFork, Users, BookOpen } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
+
 
 export default function GitHubStats() {
   const [stats, setStats] = useState(null);
@@ -30,10 +29,10 @@ export default function GitHubStats() {
   }, []);
 
   const statCards = [
-    { icon: BookOpen, label: 'Public Repos', value: stats?.public_repos ?? '—', color: '#6366f1' },
-    { icon: Users, label: 'Followers', value: stats?.followers ?? '—', color: '#06b6d4' },
-    { icon: Users, label: 'Following', value: stats?.following ?? '—', color: '#a78bfa' },
-    { icon: BookOpen, label: 'GitHub Since', value: stats?.created_at ? new Date(stats.created_at).getFullYear() : '—', color: '#f59e0b' },
+    { icon: 'fa-solid fa-book-open', label: 'Public Repos', value: stats?.public_repos ?? '—', color: '#6366f1' },
+    { icon: 'fa-solid fa-users', label: 'Followers', value: stats?.followers ?? '—', color: '#06b6d4' },
+    { icon: 'fa-solid fa-users', label: 'Following', value: stats?.following ?? '—', color: '#a78bfa' },
+    { icon: 'fa-solid fa-book-open', label: 'GitHub Since', value: stats?.created_at ? new Date(stats.created_at).getFullYear() : '—', color: '#f59e0b' },
   ];
 
   return (
@@ -48,7 +47,7 @@ export default function GitHubStats() {
           viewport={{ once: true }}
         >
           <div className="section-tag mx-auto mb-4 w-fit">
-            <FaGithub size={12} /> GitHub Activity
+            <i className="fa-brands fa-github text-[12px]"></i> GitHub Activity
           </div>
           <h2
             className="font-display font-black mb-4"
@@ -70,7 +69,7 @@ export default function GitHubStats() {
               transition={{ delay: i * 0.08 }}
               viewport={{ once: true }}
             >
-              <card.icon size={20} style={{ color: card.color }} className="mx-auto mb-3" />
+              <i className={`${card.icon} text-[20px] mx-auto mb-3 block`} style={{ color: card.color }}></i>
               <div
                 className="font-display font-black text-2xl mb-1"
                 style={{ color: card.color }}
@@ -105,17 +104,17 @@ export default function GitHubStats() {
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <FaGithub size={16} style={{ color: '#6366f1' }} />
+                    <i className="fa-brands fa-github text-[16px]" style={{ color: '#6366f1' }}></i>
                     <span className="font-semibold text-sm" style={{ color: 'var(--text-primary)' }}>
                       {repo.name}
                     </span>
                   </div>
                   <div className="flex items-center gap-3 text-xs" style={{ color: 'var(--text-muted)' }}>
                     <span className="flex items-center gap-1">
-                      <Star size={12} /> {repo.stargazers_count}
+                      <i className="fa-solid fa-star text-[12px]"></i> {repo.stargazers_count}
                     </span>
                     <span className="flex items-center gap-1">
-                      <GitFork size={12} /> {repo.forks_count}
+                      <i className="fa-solid fa-code-fork text-[12px]"></i> {repo.forks_count}
                     </span>
                   </div>
                 </div>
@@ -147,7 +146,7 @@ export default function GitHubStats() {
             rel="noopener noreferrer"
             className="btn-outline"
           >
-            <FaGithub size={16} /> View All Repositories
+            <i className="fa-brands fa-github text-[16px]"></i> View All Repositories
           </a>
         </motion.div>
       </div>

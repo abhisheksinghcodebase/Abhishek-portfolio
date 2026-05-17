@@ -1,33 +1,32 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { MapPin, GraduationCap, Target, Briefcase } from 'lucide-react';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+
 
 const highlights = [
-  { icon: MapPin, label: 'Location', value: 'Jaipur, Rajasthan 🇮🇳', color: '#6366f1' },
-  { icon: GraduationCap, label: 'Degree', value: 'B.Tech CSE (AI) — 2029', color: '#06b6d4' },
-  { icon: Target, label: 'Goal', value: 'AI Engineer & SWE', color: '#a78bfa' },
-  { icon: Briefcase, label: 'Status', value: 'Open to Internships', color: '#f59e0b' },
+  { icon: 'fa-solid fa-location-dot', label: 'Location', value: 'Jaipur, Rajasthan 🇮🇳', color: '#6366f1' },
+  { icon: 'fa-solid fa-graduation-cap', label: 'Degree', value: 'B.Tech CSE (AI) — 2029', color: '#06b6d4' },
+  { icon: 'fa-solid fa-bullseye', label: 'Goal', value: 'AI Engineer & SWE', color: '#a78bfa' },
+  { icon: 'fa-solid fa-briefcase', label: 'Status', value: 'Open to Internships', color: '#f59e0b' },
 ];
 
 const socials = [
   {
-    icon: FaGithub,
+    icon: 'fa-brands fa-github',
     label: 'GitHub',
     value: '@abhisheksinghcodebase',
     href: 'https://github.com/abhisheksinghcodebase',
     color: '#6366f1',
   },
   {
-    icon: FaLinkedin,
+    icon: 'fa-brands fa-linkedin',
     label: 'LinkedIn',
     value: 'abhisheksinghcode',
     href: 'https://linkedin.com/in/abhisheksinghcode',
     color: '#0ea5e9',
   },
   {
-    icon: FaTwitter,
+    icon: 'fa-brands fa-twitter',
     label: 'X / Twitter',
     value: '@Abhisheksing443',
     href: 'https://x.com/Abhisheksing443',
@@ -57,7 +56,7 @@ export default function About() {
             {/* Avatar */}
             <div className="relative mb-8">
               <div
-                className="w-52 h-52 rounded-3xl overflow-hidden shadow-2xl glow-indigo"
+                className="w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden shadow-2xl glow-indigo"
                 style={{ border: '3px solid rgba(99,102,241,0.4)' }}
               >
                 <Image
@@ -101,7 +100,7 @@ export default function About() {
                   transition={{ delay: i * 0.1, duration: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <Icon size={17} style={{ color }} className="mb-2" />
+                  <i className={`${Icon} mb-2 text-[17px]`} style={{ color }}></i>
                   <div className="text-xs" style={{ color: 'var(--text-muted)' }}>{label}</div>
                   <div className="text-sm font-semibold mt-0.5 leading-snug" style={{ color: 'var(--text-primary)' }}>
                     {value}
@@ -121,7 +120,7 @@ export default function About() {
                   className="flex items-center gap-2 glass rounded-xl px-4 py-2.5 card-hover text-xs font-medium"
                   style={{ border: `1px solid ${color}25`, color: 'var(--text-secondary)' }}
                 >
-                  <Icon size={15} style={{ color }} />
+                  <i className={`${Icon} text-[15px]`} style={{ color }}></i>
                   {value}
                 </a>
               ))}
@@ -190,7 +189,7 @@ export default function About() {
               style={{ border: '1px solid rgba(99,102,241,0.25)', background: 'rgba(99,102,241,0.06)' }}
             >
               <div className="flex items-center gap-2 mb-2">
-                <Target size={16} style={{ color: '#a5b4fc' }} />
+                <i className="fa-solid fa-bullseye text-[16px]" style={{ color: '#a5b4fc' }}></i>
                 <span className="text-sm font-bold" style={{ color: '#a5b4fc' }}>Career Goal</span>
               </div>
               <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>

@@ -1,6 +1,5 @@
 'use client';
-import { Code2, Heart } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
+
 
 const footerLinks = [
   { label: 'About', href: '#about' },
@@ -26,7 +25,7 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center">
-              <Code2 size={16} className="text-white" />
+              <i className="fa-solid fa-code text-white text-[16px]"></i>
             </div>
             <span className="font-display font-bold text-sm" style={{ color: 'var(--text-primary)' }}>
               Abhishek <span className="gradient-text">Singh</span>
@@ -55,13 +54,13 @@ export default function Footer() {
             className="flex items-center gap-2 text-xs font-medium transition-colors duration-200 hover:text-indigo-400"
             style={{ color: 'var(--text-muted)' }}
           >
-            <FaGithub size={15} /> @abhisheksinghcodebase
+            <i className="fa-brands fa-github text-[15px]"></i> @abhisheksinghcodebase
           </a>
         </div>
 
         {/* Copyright */}
         <div className="mt-8 pt-6 text-center text-xs flex items-center justify-center gap-1.5" style={{ color: 'var(--text-muted)', borderTop: '1px solid var(--card-border)' }}>
-          © {year} Abhishek Singh. Made with <Heart size={12} className="text-red-400 fill-red-400" /> using Next.js & Framer Motion.
+          © {year} Abhishek Singh. Made with <i className="fa-solid fa-heart text-red-400 text-[12px]"></i> using Next.js & Framer Motion.
         </div>
       </div>
     </footer>

@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Sparkles, ArrowRight, Phone } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 
 export default function Contact() {
   return (
@@ -24,7 +23,7 @@ export default function Contact() {
         >
           {/* Tag */}
           <div className="section-tag mx-auto mb-6 w-fit">
-            <Sparkles size={12} /> Get In Touch
+            <i className="fa-solid fa-wand-magic-sparkles text-[12px]"></i> Get In Touch
           </div>
 
           {/* Heading */}
@@ -44,7 +43,7 @@ export default function Contact() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:abhisheksinghcode@zohomail.in" className="btn-primary">
-              <Mail size={18} /> Send an Email <ArrowRight size={14} />
+              <i className="fa-solid fa-envelope text-[18px]"></i> Send an Email <i className="fa-solid fa-arrow-right text-[14px]"></i>
             </a>
             <a
               href="https://github.com/abhisheksinghcodebase"
@@ -52,7 +51,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="btn-outline"
             >
-              <FaGithub size={18} /> View GitHub
+              <i className="fa-brands fa-github text-[18px]"></i> View GitHub
             </a>
           </div>
 
@@ -67,35 +66,35 @@ export default function Contact() {
           <div className="flex flex-wrap justify-center gap-3">
             {[
               {
-                icon: FaGithub,
+                icon: 'fa-brands fa-github',
                 label: 'GitHub',
                 sub: '@abhisheksinghcodebase',
                 href: 'https://github.com/abhisheksinghcodebase',
                 color: '#6366f1',
               },
               {
-                icon: FaLinkedin,
+                icon: 'fa-brands fa-linkedin',
                 label: 'LinkedIn',
                 sub: 'abhisheksinghcode',
                 href: 'https://linkedin.com/in/abhisheksinghcode',
                 color: '#0ea5e9',
               },
               {
-                icon: FaTwitter,
+                icon: 'fa-brands fa-twitter',
                 label: 'X / Twitter',
                 sub: '@Abhisheksing443',
                 href: 'https://x.com/Abhisheksing443',
                 color: '#a78bfa',
               },
               {
-                icon: MessageSquare,
+                icon: 'fa-solid fa-envelope',
                 label: 'Email',
                 sub: 'abhisheksinghcode@zohomail.in',
                 href: 'mailto:abhisheksinghcode@zohomail.in',
                 color: '#06b6d4',
               },
               {
-                icon: Phone,
+                icon: 'fa-solid fa-phone',
                 label: 'Phone',
                 sub: '+91 8603937938',
                 href: 'tel:+918603937938',
@@ -114,7 +113,7 @@ export default function Contact() {
                   className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
                   style={{ background: `${color}15` }}
                 >
-                  <Icon size={17} style={{ color }} />
+                  <i className={`${Icon} text-[17px]`} style={{ color }}></i>
                 </div>
                 <div>
                   <div className="text-xs font-semibold" style={{ color: 'var(--text-primary)' }}>

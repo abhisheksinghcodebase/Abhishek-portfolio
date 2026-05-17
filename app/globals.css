@@ -1,4 +1,8 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* ─── CSS Custom Properties ─────────────────────────────── */
 :root {
@@ -37,7 +41,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Finlandica Headline', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -53,7 +57,7 @@ body {
 }
 
 /* ─── Typography ─────────────────────────────────────────── */
-.font-display { font-family: 'Outfit', sans-serif; }
+.font-display { font-family: 'Finlandica Headline', sans-serif; }
 
 .gradient-text {
   background: linear-gradient(135deg, #6366f1 0%, #06b6d4 50%, #a78bfa 100%);

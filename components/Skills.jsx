@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Cpu } from 'lucide-react';
+
 
 const skillGroups = [
   {
@@ -77,7 +77,7 @@ export default function Skills() {
           viewport={{ once: true }}
         >
           <div className="section-tag mx-auto mb-4 w-fit">
-            <Cpu size={12} /> Tech Stack
+            <i className="fa-solid fa-microchip text-[12px]"></i> Tech Stack
           </div>
           <h2
             className="font-display font-black mb-4"
