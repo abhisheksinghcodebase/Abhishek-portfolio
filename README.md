@@ -3,7 +3,7 @@
 A modern, highly responsive, and interactive personal portfolio website built to showcase my skills, projects, and professional journey as an AI Engineer & Software Developer.
 
 ## 🚀 Live Demo
-[Add your live link here]
+https://abhishek-portfolio-omega-blush.vercel.app
 
 ## 🛠️ Tech Stack
 
@@ -32,27 +32,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 *   Node.js (v18 or higher recommended)
 *   npm or yarn or pnpm
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/abhisheksinghcodebase/portfolio.git
-   cd portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser**
-   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## 📁 Project Structure
 
