@@ -1,5 +1,6 @@
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Abhishek Singh — Full-Stack Developer & AI Engineer',
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
