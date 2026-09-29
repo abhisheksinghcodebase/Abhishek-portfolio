@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'GitHub', href: '#github' },
@@ -70,7 +71,7 @@ export default function Navbar() {
               <span className="font-display font-bold text-lg tracking-tight" style={{ color: 'var(--text-primary)' }}>
                 Abhishek
               </span>
-              <span className="gradient-text font-display font-bold text-lg ml-1 tracking-tight">Singh</span>
+              <span className="gradient-text font-display font-bold text-lg ml-1 tracking-tight">Kumar</span>
             </div>
           </a>
 

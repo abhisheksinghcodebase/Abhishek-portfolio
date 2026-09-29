@@ -28,7 +28,7 @@ export default function Footer() {
               <i className="fa-solid fa-code text-white text-[16px]"></i>
             </div>
             <span className="font-display font-bold text-sm" style={{ color: 'var(--text-primary)' }}>
-              Abhishek <span className="gradient-text">Singh</span>
+              Abhishek <span className="gradient-text">Kumar</span>
             </span>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 pt-6 text-center text-xs flex items-center justify-center gap-1.5" style={{ color: 'var(--text-muted)', borderTop: '1px solid var(--card-border)' }}>
-          © {year} Abhishek Singh. Made with <i className="fa-solid fa-heart text-red-400 text-[12px]"></i> using Next.js & Framer Motion.
+          © {year} Abhishek Kumar. Made with <i className="fa-solid fa-heart text-red-400 text-[12px]"></i> using Next.js & Framer Motion.
         </div>
       </div>
     </footer>

@@ -7,13 +7,13 @@ const skillGroups = [
     category: 'Programming Languages',
     emoji: '💻',
     color: '#6366f1',
-    skills: ['C', 'Python', 'JavaScript'],
+    skills: ['C','CPP', 'Python', 'JavaScript'],
   },
   {
     category: 'Web Technologies',
     emoji: '🌐',
     color: '#06b6d4',
-    skills: ['HTML5', 'CSS3', 'React.js', 'Next.js', 'Vue.js', 'Web3.js'],
+    skills: ['HTML5', 'CSS3', 'React.js', 'Next.js',],
   },
   {
     category: 'Backend Development',
@@ -25,13 +25,13 @@ const skillGroups = [
     category: 'Database & Cloud',
     emoji: '🗄️',
     color: '#f59e0b',
-    skills: ['MongoDB', 'Firebase', 'Firestore', 'Mongoose', 'Vercel', 'Render'],
+    skills: ['MongoDB', 'Firebase', 'Mongoose', 'Vercel', 'Render'],
   },
   {
     category: 'AI & Tools',
     emoji: '🤖',
     color: '#ef4444',
-    skills: ['Google Gemini', 'GPT-4o', 'OpenAI SDK', 'Terraform', 'AWS'],
+    skills: ['Google Gemini', 'GPT-4o', 'Groq-API'],
   },
   {
     category: 'Version Control',
@@ -43,13 +43,13 @@ const skillGroups = [
     category: 'Design & UI/UX',
     emoji: '🎨',
     color: '#ec4899',
-    skills: ['Figma', 'Canva', 'Adobe Photoshop', 'Illustrator', 'Premiere Pro', 'Lightroom'],
+    skills: ['Canva','Illustrator', 'Premiere Pro', 'Lightroom'],
   },
   {
     category: 'Soft Skills',
     emoji: '🤝',
     color: '#0ea5e9',
-    skills: ['Communication', 'Teamwork', 'Leadership', 'Coordination', 'Problem Solving'],
+    skills: ['Communication', 'Teamwork', 'Coordination', 'Problem Solving'],
   },
 ];
 

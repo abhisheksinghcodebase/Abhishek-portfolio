@@ -2,19 +2,19 @@ import './globals.css';
 import { ThemeProvider } from 'next-themes';
 
 export const metadata = {
-  title: 'Abhishek Singh — Full-Stack Developer & AI Engineer',
-  description: 'Portfolio of Abhishek Singh — Full-stack developer specializing in React, Next.js, Node.js, and AI-powered applications. Creator of ElectIQ, GlassChat, and Terraform Generator.',
-  keywords: ['developer', 'portfolio', 'react', 'nextjs', 'nodejs', 'ai', 'full-stack', 'abhishek singh'],
-  authors: [{ name: 'Abhishek Singh' }],
+  title: 'Abhishek Kumar — Full-Stack Developer & AI Engineer',
+  description: 'Portfolio of Abhishek Kumar — Full-stack developer specializing in React, Next.js, Node.js, and AI-powered applications. Creator of ElectIQ, GlassChat, and Terraform Generator.',
+  keywords: ['developer', 'portfolio', 'react', 'nextjs', 'nodejs', 'ai', 'full-stack', 'abhishek kumar'],
+  authors: [{ name: 'Abhishek Kumar' }],
   openGraph: {
-    title: 'Abhishek Singh — Full-Stack Developer & AI Engineer',
+    title: 'Abhishek Kumar — Full-Stack Developer',
     description: 'Explore full-stack projects built with modern technologies and AI.',
     type: 'website',
     url: 'https://abhishek-portfolio.vercel.app',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Abhishek Singh — Full-Stack Developer',
+    title: 'Abhishek Kumar — Full-Stack Developer',
     description: 'Building AI-powered web applications with React, Next.js & Node.js',
   },
 };

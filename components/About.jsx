@@ -146,17 +146,17 @@ export default function About() {
 
             {/* Professional Summary */}
             <p className="text-base leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
-              First-year <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>
+              Second-year <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>
                 Computer Science Engineering (AI)
               </span> student at Arya College of Engineering, Jaipur. Passionate about software
               development, algorithmic problem-solving, and building AI-powered web applications.
             </p>
 
             <p className="text-base leading-relaxed mb-8" style={{ color: 'var(--text-secondary)' }}>
-              Proficient in <span className="font-semibold gradient-text">C, JavaScript, React, Next.js</span> and
+              Proficient in <span className="font-semibold gradient-text">C,CPP, Python, JavaScript, DBMS</span> and
               actively building real-world projects. Long-term goal: become a skilled{' '}
               <span className="font-semibold" style={{ color: 'var(--text-primary)' }}>
-                AI Engineer & Software Developer
+                Software Engineer.
               </span>.
             </p>
 
@@ -166,7 +166,7 @@ export default function About() {
                 { emoji: '🏫', text: 'B.Tech CSE (AI) — Arya College of Engineering, Jaipur (2025–2029)' },
                 { emoji: '🚀', text: 'Built ElectIQ, GlassChat, Terraform Generator & Phulhar Dham Platform' },
                 { emoji: '🤝', text: 'Participated in Smart India Hackathon & HackNexus 2025' },
-                { emoji: '🎖️', text: 'Campus Ambassador at Arya College of Engineering for MNIT Jaipur' },
+                // { emoji: '🎖️', text: 'Campus Ambassador at Arya College of Engineering for MNIT Jaipur' },
                 { emoji: '🌐', text: 'Live projects deployed on Vercel — 2 full-stack apps in production' },
               ].map(({ emoji, text }, i) => (
                 <motion.div
